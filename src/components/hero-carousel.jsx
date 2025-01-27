@@ -3,11 +3,11 @@
 import { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react'
-import p1 from '../assets/p1.jpeg';
+import p1 from '../assets/p1.jpg';
 import p2 from '../assets/p2.jpg';
-import p3 from '../assets/p3.avif';
-import p4 from '../assets/p4.png';
-import p5 from '../assets/p5.png';
+import p3 from '../assets/p3.webp';
+import p4 from '../assets/p4.jpeg';
+import p5 from '../assets/p5.jpg';
 import p6 from '../assets/p6.png';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -15,42 +15,36 @@ import "react-toastify/dist/ReactToastify.css";
 const slides = [
   {
     title: "Optimizes Clinical Data Management for Cost-Effective Trials and Research Analysis.",
-    metric: "50%",
     metricLabel: "Cut In clinical trial data processing",
     image: p1
   },
   {
     title: "Streamlines and Accelerates Processes in Drug Research and Development.",
     description: "AI-powered document analysis for legal teams",
-    metric: "60%",
     metricLabel: "Boost In drug discovery speed",
     image: p2
   },
   {
     title: "Drives Cost-Efficiency in Drug Development Through AI-Driven Innovation.",
     description: "Streamline pharmaceutical research and development",
-    metric: "30%",
     metricLabel: "Reduction In drug development costs",
     image: p3
   },
   {
     title: "Simplifies Compliance Documentation to Enhance Regulatory Efficiency and Accuracy.",
     description: "Automated contract review and risk assessment",
-    metric: "70%",
     metricLabel: "Speeds up In compliance documentation ",
     image: p4
   },
   {
     title: "Enhances Pharmacovigilance by Automating Adverse Event Detection and Reporting.",
     description: "Saves 40% in adverse event reporting time",
-    metric: "40%",
     metricLabel: "Saving in adverse event reporting time",
     image: p5
   },
   {
     title: "Boosts Research and Development Efficiency Through Advanced AI Integration.",
     description: "Improves R&D efficiency by 45%",
-    metric: "45%",
     metricLabel: "Improvement In R&D efficiency",
     image: p6
   },

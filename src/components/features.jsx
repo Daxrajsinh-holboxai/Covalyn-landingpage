@@ -1,8 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import architecture from '../assets/arch.gif'
-import moleculeImage from '../assets/arch.gif' // Add a new image for the second feature
+import architecture from '../assets/arch.jpg'
+import moleculeImage from '../assets/hits.jpg' // Add a new image for the second feature
 import Modal from './modal'
 
 export default function Features() {

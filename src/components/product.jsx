@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import tabluar from '../assets/tabular.png'
+import tabluar from '../assets/tabular.jpg'
 import Modal from './modal'
 
 export default function Product() {
