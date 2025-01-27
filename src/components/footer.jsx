@@ -12,9 +12,11 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">ADDRESS</h3>
-            <p>593 Somerville Avenue
-             <br/>Unit 6, Somerville, MA
-              02143</p>
+            <p>Covaln Inc.<br/>
+              2748 Grand Oaks Loop<br/>
+              Cedar Park<br/>
+              Texas 78613
+             </p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">FOLLOW US</h3>

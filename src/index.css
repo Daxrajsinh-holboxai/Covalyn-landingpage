@@ -2,9 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+
+/* Ensure Tailwind uses the global font settings */
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .bg-grid-pattern {
   background-image: 
-    linear-gradient(to right, #e5e7eb 1px, transparent 1px),
-    linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+    linear-gradient(to right, #2d2d2d 1px, transparent 1px),
+    linear-gradient(to bottom, #2d2d2d 1px, transparent 1px);
   background-size: 20px 20px;
+}
+/* Black background */
+.bg-black {
+  background-color: #000000; /* Pure black background */
+}
+
+/* Adjust heading text color for visibility */
+.text-highlight {
+  color: #ffffff; /* Pure white for main headings */
+}
+
+/* Subheading text (less prominent than the main heading) */
+.text-subtle {
+  color: #d1d5db; /* Light gray for subheadings */
+}
+
+/* Carousel metric and description */
+.carousel-metric {
+  color: #ffffff; /* Bright white for metrics */
+}
+
+.carousel-description {
+  color: #e5e7eb; /* Light gray for descriptions */
 }
