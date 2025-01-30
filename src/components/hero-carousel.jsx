@@ -113,10 +113,10 @@ export default function HeroCarousel() {
   transition={{ duration: 0.8 }}
   className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight"
 >
-  Accelerating Pre-Clinical Trials with
+   GenAI
   <br />
   <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-blue-500 to-purple-500">
-    AI-Powered Innovation
+  Transforming Pre-Clinical Trials
   </span>
 </motion.h1>
 
@@ -124,9 +124,9 @@ export default function HeroCarousel() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
+            className="text-xl md:text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Streamline drug discovery processes with cutting-edge AI solutions. From target selection to lead optimization, we deliver unmatched efficiency and accuracy.
+            Achieve faster, safer, and cost-effective drug discovery with AI-driven precision.
           </motion.p>
         </div>
 

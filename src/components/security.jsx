@@ -6,23 +6,39 @@ import { Shield, Lock, FileCheck } from 'lucide-react'
 const features = [
   {
     icon: Shield,
-    title: 'AI-Enhanced Target Selection',
-    description: 'Identify the most promising biological targets with AI’s ability to analyze complex datasets and predict therapeutic relevance. Our technology helps prioritize targets that have the highest likelihood of success in pre-clinical trials.'
+    title: 'Precision-Driven Target Selection',
+    points: [
+      'Most viable druggable pathways',
+      'Higher clinical success rates',
+      'Reduced costly missteps'
+    ]
   },
   {
     icon: Shield,
-    title: 'Streamlined Hit Identification',
-    description: 'Reduce the time and cost of hit identification by leveraging AI to screen vast chemical libraries. Our platform predicts high-affinity compounds and eliminates non-viable candidates early in the process.'
+    title: 'Rapid and Scalable Hit Identification',
+    points: [
+      'Faster identification of high-potential compounds',
+      'Reduced screening costs and time',
+      'Streamlined drug discovery process'
+    ]
   },
   {
     icon: Lock,
-    title: 'Lead Optimization with AI',
-    description: 'Optimize lead compounds for efficacy, safety, and manufacturability using AI-driven predictive models. Our tools ensure that only the best candidates move forward in the pipeline.'
+    title: 'Maximized Efficacy and Safety',
+    points: [
+      'Superior drug efficacy',
+      'Minimized toxicity risks',
+      'Optimized therapeutic impact'
+    ]
   },
   {
     icon: FileCheck,
-    title: 'Accelerating Pre-Clinical Insights',
-    description: 'AI provides actionable insights by integrating data from diverse sources, including literature, clinical trials, and experimental results. This accelerates decision-making and reduces trial-and-error cycles.'
+    title: 'Actionable, Data-Driven Insights',
+    points: [
+      'Informed, evidence-backed decision making',
+      'Uncovered hidden opportunities',
+      'Accelerated market-ready solutions'
+    ]
   }
 ]
 
@@ -37,7 +53,9 @@ export default function Features() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Features</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Accelerate Drug Development with GenAI
+          </h2>
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
@@ -47,11 +65,15 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow text-center"
             >
               <feature.icon className="w-12 h-12 text-blue-600 mb-4 mx-auto" />
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <ul className="text-gray-600 list-disc list-outside pl-5 text-left mx-auto w-fit">
+                {feature.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>
